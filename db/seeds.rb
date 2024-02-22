@@ -22,3 +22,15 @@ students = Student.create(
     email: "ravigupta@gmail.com#{i}"
 )
 }
+
+Student.all.each do|student|
+    student.blogs.create(title: "dummy blog for student#{student.id}" , content: "custom content pending")
+    student.blogs.create(title: "dummy blog for student#{student.id}" , content: "custom content pending")
+end
+
+
+
+
+
+
+
